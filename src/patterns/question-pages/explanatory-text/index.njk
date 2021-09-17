@@ -20,33 +20,45 @@ layout: layout-example-full-page.njk
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-l">
-        Add undergraduate degree
+        Interview needs
       </h1>
 
       <p class="govuk-body">
-        You need an undergraduate degree to apply for teacher training. If you have further degrees, you can add them later.
+        Providers do not usually have much flexibility when setting a date and time for interview unless you need adjustments due to a <a href="#" class="govuk-link">health condition or disability</a>.
+      </p>
+
+      <p class="govuk-body">
+        However, if you need flexibility for other reasons you can tell us about it here.
+      </p>
+
+      <p class="govuk-body">
+        For example, you have commitments like caring responsibilites or employment.
+      </p>
+
+      <p class="govuk-body">
+        Contact your provider if you're concerned about the interview process.
       </p>
 
       <form action="/form-handler" method="post" novalidate>
 
         {{ govukRadios({
-          idPrefix: "type-of-degree",
-          name: "type-of-degree",
+          idPrefix: "interview-needs",
+          name: "interview-needs",
           fieldset: {
             legend: {
-              text: "What type of degree do you want to add?",
+              text: "Do you have any interview needs?",
               isPageHeading: false,
               classes: "govuk-fieldset__legend--m"
             }
           },
           items: [
             {
-              value: "uk-degree",
-              text: "UK degree"
+              value: "yes",
+              text: "Yes"
             },
             {
-              value: "non-uk-degree",
-              text: "Non UK degree"
+              value: "no",
+              text: "No"
             }
           ]
         }) }}
