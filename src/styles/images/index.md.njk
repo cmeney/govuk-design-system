@@ -28,31 +28,18 @@ If your image represents something physical, such as a letter, document or credi
 
 ## Alternative text
 
-Alternative text, or alt text, is read out by screen readers or displayed if an image does not load or if images have been switched off.
+Users of assistive technology (for example, screen readers) use alt text as an alternative to images.
 
-All images, except decorative images, must have alt text that:
+However, alt text is not accessible to all users. To make the description available to everyone, you should:
 
-- tells people what information the image provides
-- describes the content and function of the image
-- is specific, meaningful and concise
+- use the body text to describe what's happening in the image
+- leave the 'Alt text field' empty
 
-Use normal punctuation, like commas and full stops, so the text is easy to read and understand.
-
-Do not:
-
-- include the name of the photographer or person who created the image
-- start with ‘Image of’, ‘Graphic of’ or ‘Photo of’
-- repeat information from the page
-- include extra information not in the image
+If possible, describe the image's content without referring to the format itself. For example, write "Larry the cat, sitting on a meeting table, wearing a bowtie", instead of "an image of Larry the cat".
 
 {{ example({group: "styles", item: "images", example: "alt-text", html: true, open: true, size: "l"}) }}
 
-Some images do not need descriptions. Use `alt=""` if the image is:
 
-- decorative and does not include important content
-- an icon that has a text label that the alt text would repeat
-- used in a link and the image is not needed to understand the link
+Avoid images that contain text, especially PNGs and JPGs because the text becomes unreadable when the user zooms in. If the image does contain text, use SVG because it remains readable when the user zooms in.
 
-Use the [Web Accessibility initiative alt decision tree](https://www.w3.org/WAI/tutorials/images/decision-tree/) to work out if the image needs alt text.
-
-Avoid images that contain text, especially PNGs and JPGs because the text becomes unreadable when the user zooms in. If the image does contain text, use SVG because it remains readable when the user zooms in. The alt text should be the same as the text displayed in the image.
+[Read more about alt text in GOV.UK's Images guidance.](https://www.gov.uk/guidance/content-design/images#alt-text)
